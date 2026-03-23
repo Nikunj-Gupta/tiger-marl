@@ -1,0 +1,21 @@
+env: "gymma"
+
+env_args:
+  #N: 4
+  key: null
+  time_limit: 100
+  pretrained_wrapper: null
+  common_reward: True  # Run experiment with common reward setup
+  reward_scalarisation: "sum"  # How to aggregate rewards to single common reward (only used if common_reward is True)
+  num_adversaries: 10
+  num_good: 3 
+
+test_greedy: True
+test_nepisode: 100
+test_interval: 50000
+log_interval: 50000
+runner_log_interval: 10000
+learner_log_interval: 10000
+t_max: 2050000
+
+env: tag
